@@ -1,38 +1,52 @@
-# Dự án Trang Web Giới Thiệu Ngôi Làng
+# 🌿 Dự án Trang Web Giới Thiệu Ngôi Làng 🏡
 
-Đây là một trang web giới thiệu về ngôi làng Trường Lưu, cung cấp thông tin về lịch sử, thành tựu và các sản phẩm đặc trưng của làng. Trang web được thiết kế nhằm mục đích quảng bá và nghiên cứu về đề tài này.
+> **Một trang web giới thiệu về làng Trường Lưu, cung cấp thông tin về lịch sử, thành tựu và các sản phẩm đặc trưng.**  
+> Trang web được thiết kế nhằm mục đích **quảng bá** và **nghiên cứu** về đề tài này.  
 
-## Mục lục
+---
 
-1. [Giới thiệu](#giới-thiệu)  
-2. [Sử dụng](#sử-dụng)  
-3. [Công nghệ sử dụng](#công-nghệ-sử-dụng)  
-4. [Liên hệ](#liên-hệ)  
+## 📌 Mục lục  
 
-## Giới thiệu
+- [✨ Giới thiệu](#-giới-thiệu)  
+- [🖥️ Sử dụng](#️-sử-dụng)  
+- [🚀 Công nghệ sử dụng](#-công-nghệ-sử-dụng) 
+- [📧 Liên hệ](#-liên-hệ)  
 
-Dự án nhằm tạo ra một trang web tương tác giúp người dùng tìm hiểu về ngôi làng XYZ. Trang web gồm các phần chính:  
+---
 
-- **Trang chủ:** Cung cấp hình ảnh, tổng quan về làng, thành tựu và sản phẩm.  
-- **Trang thành tựu:** Trình bày chi tiết về các thành tựu nổi bật của làng.  
-- **Trang sản phẩm:** Hiển thị thông tin và chi tiết về các sản phẩm đặc trưng của làng.  
+## ✨ Giới thiệu  
 
-## Sử dụng
+Dự án này giúp người dùng khám phá về ngôi làng Trường Lưu thông qua các nội dung chính:  
 
-- **Trang chủ:** Xem tổng quan về làng, hình ảnh và các liên kết quan trọng.  
-- **Trang thành tựu:** Khám phá chi tiết về các thành tựu của làng.  
-- **Trang sản phẩm:** Tìm hiểu các sản phẩm truyền thống và đặc trưng của làng.  
+🔹 **Trang chủ:** Hình ảnh, tổng quan, thành tựu và sản phẩm.  
+🔹 **Trang thành tựu:** Danh sách các thành tựu quan trọng của làng.  
+🔹 **Trang sản phẩm:** Giới thiệu và mô tả chi tiết các sản phẩm đặc trưng.  
 
-## Công nghệ sử dụng
+---
 
-Dự án này sử dụng các công nghệ sau:
+## 🖥️ Sử dụng  
 
-- HTML5, CSS3, JavaScript  
-- Bootstrap 5  
-- jQuery  
+💡 **Trang chủ** → Xem tổng quan về làng, hình ảnh, liên kết quan trọng.  
+🏆 **Trang thành tựu** → Khám phá các thành tựu của làng qua từng thời kỳ.  
+🛍️ **Trang sản phẩm** → Tìm hiểu các sản phẩm truyền thống đặc sắc.  
 
-## Liên hệ
+---
 
-- **Tên:** Bùi Chung Hiếu  
-- **Email:** chtalong@gmail.com 
+## 🚀 Công nghệ sử dụng  
 
+Dự án sử dụng các công nghệ hiện đại:  
+
+- 🌐 **HTML5, CSS3, JavaScript**  
+- 🎨 **Bootstrap 5** – giao diện responsive, hiện đại  
+- ⚡ **jQuery** – tăng trải nghiệm tương tác  
+
+---
+
+## 📧 Liên hệ  
+
+👤 **Tên:** Bùi Chung Hiếu
+📩 **Email:** [chtalong@gmail.com](mailto:chtalong@gmail.com)  
+
+---
+
+🚀 **Hãy cùng khám phá ngôi làng Trường Lưu ngay hôm nay!** 🏡✨  
