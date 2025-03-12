@@ -34,6 +34,5 @@ Dự án này sử dụng các công nghệ sau:
 ## Liên hệ
 
 - **Tên:** Bùi Chung Hiếu  
-- **Email:** chtalong@gmail.com
-- **Website:** [https://example.com](https://example.com)  
+- **Email:** chtalong@gmail.com 
 
