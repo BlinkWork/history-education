@@ -1,184 +1,248 @@
-// Wait for the DOM to be fully loaded
+/*--------------------------------------------------------------
+# Document Ready
+--------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar scroll effect
-  const navbar = document.querySelector(".navbar")
+  // Initialize AOS
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false,
+    });
+  }
 
+  // Preloader
+  const preloader = document.querySelector(".preloader");
+  if (preloader) {
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        preloader.classList.add("hide");
+      }, 500);
+    });
+  }
+
+  // Navbar scroll effect
+  const navbar = document.querySelector(".navbar");
   if (navbar) {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 50) {
-        navbar.style.padding = "10px 0"
-        navbar.style.backgroundColor = "rgba(255, 255, 255, 0.98)"
-        navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"
+        navbar.classList.add("scrolled");
       } else {
-        navbar.style.padding = "15px 0"
-        navbar.style.backgroundColor = "rgba(255, 255, 255, 0.95)"
-        navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.05)"
+        navbar.classList.remove("scrolled");
       }
-    })
+    });
   }
 
-  // Product thumbnail gallery
-  const thumbnails = document.querySelectorAll(".thumbnail")
-  const mainImage = document.getElementById("main-product-image")
-
-  if (thumbnails.length > 0 && mainImage) {
-    thumbnails.forEach((thumbnail) => {
-      thumbnail.addEventListener("click", function () {
-        // Remove active class from all thumbnails
-        thumbnails.forEach((thumb) => thumb.classList.remove("active"))
-
-        // Add active class to clicked thumbnail
-        this.classList.add("active")
-
-        // Update main image
-        const imgSrc = this.getAttribute("data-img")
-        mainImage.src = imgSrc
-
-        // Add fade effect
-        mainImage.style.opacity = "0"
-        setTimeout(() => {
-          mainImage.style.opacity = "1"
-        }, 100)
-      })
-    })
-  }
-
-  // Product color variants
-  const colorVariants = document.querySelectorAll(".variant-option")
-
-  if (colorVariants.length > 0) {
-    colorVariants.forEach((variant) => {
-      variant.addEventListener("click", function () {
-        // Remove active class from all variants
-        colorVariants.forEach((v) => v.classList.remove("active"))
-
-        // Add active class to clicked variant
-        this.classList.add("active")
-
-        // Display selected color name
-        const colorName = this.getAttribute("data-color")
-        const colorDisplay = document.querySelector(".selected-color")
-        if (colorDisplay) {
-          colorDisplay.textContent = colorName
-        }
-      })
-    })
-  }
-
-  // Animate elements when they come into view
-  const animateOnScroll = () => {
-    const elements = document.querySelectorAll(
-      ".achievement-card, .product-card, .timeline-item, .achievement-card-alt",
-    )
-
-    elements.forEach((element) => {
-      const elementPosition = element.getBoundingClientRect().top
-      const screenPosition = window.innerHeight / 1.2
-
-      if (elementPosition < screenPosition) {
-        element.style.opacity = "1"
-        element.style.transform = "translateY(0)"
+  // Back to top button
+  const backToTopButton = document.querySelector(".back-to-top");
+  if (backToTopButton) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add("active");
+      } else {
+        backToTopButton.classList.remove("active");
       }
-    })
+    });
+
+    backToTopButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
   }
 
-  // Set initial state for animated elements
-  const elementsToAnimate = document.querySelectorAll(
-    ".achievement-card, .product-card, .timeline-item, .achievement-card-alt",
-  )
-  elementsToAnimate.forEach((element) => {
-    element.style.opacity = "0"
-    element.style.transform = "translateY(20px)"
-    element.style.transition = "opacity 0.5s ease, transform 0.5s ease"
-  })
-
-  // Run animation on scroll
-  window.addEventListener("scroll", animateOnScroll)
-
-  // Run animation on page load
-  animateOnScroll()
-
-  // Animate heritage features on scroll
-  const animateHeritageFeatures = () => {
-    const features = document.querySelectorAll(".heritage-feature-item, .preservation-activity, .impact-stat-item")
-
-    features.forEach((feature, index) => {
-      const featurePosition = feature.getBoundingClientRect().top
-      const screenPosition = window.innerHeight / 1.2
-
-      if (featurePosition < screenPosition) {
-        setTimeout(() => {
-          feature.style.opacity = "1"
-          feature.style.transform = "translateY(0)"
-        }, index * 100)
-      }
-    })
+  // Initialize Swiper
+  const gallerySwiper = document.querySelector(".gallery-swiper");
+  if (gallerySwiper && typeof Swiper !== "undefined") {
+    new Swiper(".gallery-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+      },
+    });
   }
 
-  // Set initial state for heritage features
-  const heritageFeaturesElements = document.querySelectorAll(
-    ".heritage-feature-item, .preservation-activity, .impact-stat-item",
-  )
-  heritageFeaturesElements.forEach((element) => {
-    element.style.opacity = "0"
-    element.style.transform = "translateY(20px)"
-    element.style.transition = "opacity 0.5s ease, transform 0.5s ease"
-  })
+  // Initialize Cultural Swiper
+  const culturalSwiper = document.querySelector(".cultural-swiper");
+  if (culturalSwiper && typeof Swiper !== "undefined") {
+    new Swiper(".cultural-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
 
-  // Run animation on scroll for heritage features
-  window.addEventListener("scroll", animateHeritageFeatures)
+  // Initialize Testimonial Swiper
+  const testimonialSwiper = document.querySelector(".testimonial-swiper");
+  if (testimonialSwiper && typeof Swiper !== "undefined") {
+    new Swiper(".testimonial-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
 
-  // Run animation on page load for heritage features
-  setTimeout(animateHeritageFeatures, 500)
+  // Initialize FancyBox
+  if (typeof Fancybox !== "undefined") {
+    Fancybox.bind("[data-fancybox]", {
+      Toolbar: {
+        display: [
+          { id: "prev", position: "center" },
+          { id: "counter", position: "center" },
+          { id: "next", position: "center" },
+          "zoom",
+          "slideshow",
+          "fullscreen",
+          "download",
+          "close",
+        ],
+      },
+    });
+  }
 
-  // Smooth scroll for tab navigation
-  const tabLinks = document.querySelectorAll(".nav-tabs .nav-link")
-  if (tabLinks.length > 0) {
-    tabLinks.forEach((link) => {
-      link.addEventListener("click", function () {
-        // Add a small delay to allow the tab to switch
-        setTimeout(() => {
-          const tabContent = document.querySelector(this.getAttribute("href"))
-          if (tabContent) {
-            window.scrollTo({
-              top: tabContent.offsetTop - 100,
-              behavior: "smooth",
-            })
+  // Counter animation
+  const factNumbers = document.querySelectorAll(".fact-number");
+  if (factNumbers.length > 0) {
+    const counterObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const target = entry.target;
+            const countTo = Number.parseInt(target.getAttribute("data-count"));
+            let count = 0;
+            const updateCount = () => {
+              const increment = countTo / 100;
+              if (count < countTo) {
+                count += increment;
+                target.textContent = Math.ceil(count);
+                setTimeout(updateCount, 20);
+              } else {
+                target.textContent = countTo;
+              }
+            };
+            updateCount();
+            observer.unobserve(target);
           }
-        }, 300)
-      })
-    })
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    factNumbers.forEach((number) => {
+      counterObserver.observe(number);
+    });
   }
 
-  // Load more button for community stories (placeholder functionality)
-  const loadMoreBtn = document.querySelector(".load-more button")
-  if (loadMoreBtn) {
-    loadMoreBtn.addEventListener("click", function () {
-      this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang tải...'
+  // Video Modal
+  const videoModal = document.getElementById("videoModal");
+  if (videoModal) {
+    videoModal.addEventListener("show.bs.modal", (event) => {
+      const button = event.relatedTarget;
+      const iframe = videoModal.querySelector("iframe");
+      // Set the video URL (replace with actual video URL)
+      iframe.setAttribute(
+        "src",
+        "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+      );
+    });
 
-      setTimeout(() => {
-        this.innerHTML = "Xem thêm câu chuyện"
-        alert("Tính năng đang được phát triển!")
-      }, 1500)
-    })
+    videoModal.addEventListener("hidden.bs.modal", () => {
+      const iframe = videoModal.querySelector("iframe");
+      iframe.setAttribute("src", "about:blank");
+    });
   }
 
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault()
+  // 3D Model Modal
+  const modelModal = document.getElementById("modelModal");
+  if (modelModal) {
+    modelModal.addEventListener("show.bs.modal", (event) => {
+      const iframe = modelModal.querySelector("iframe");
+      // Set the 3D model URL (replace with actual model URL)
+      iframe.setAttribute("src", "about:blank");
+    });
 
-      const targetId = this.getAttribute("href")
-      if (targetId === "#") return
+    modelModal.addEventListener("hidden.bs.modal", () => {
+      const iframe = modelModal.querySelector("iframe");
+      iframe.setAttribute("src", "about:blank");
+    });
+  }
 
-      const targetElement = document.querySelector(targetId)
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 100,
-          behavior: "smooth",
-        })
-      }
-    })
-  })
-})
+  // GSAP Animations
+  if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+    // Register ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
 
+    // Hero section parallax effect
+    gsap.to(".hero", {
+      backgroundPosition: "50% 0%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    // Timeline animation
+    const timelineItems = document.querySelectorAll(".timeline-item");
+    timelineItems.forEach((item, index) => {
+      gsap.from(item, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: item,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      });
+    });
+  }
+});

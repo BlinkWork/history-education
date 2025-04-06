@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ý nghĩa văn hóa - Thành cổ Sơn Tây</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- Fancybox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link type="image/x-icon" href="/assets/img/favicon.png" />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" />
+    <style>
+      /* Adaptive Gallery Styles */
+      .cultural-gallery .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Ensure images don't overflow their container */
+        height: 30rem; /* Set a consistent height for the gallery */
+      }
+
+      .cultural-gallery .swiper-slide img {
+        width: auto; /* Maintain aspect ratio */
+        height: 100%; /* Scale the image to fit the container height */
+        object-fit: cover; /* Ensure the image fills the container without distortion */
+        border-radius: var(--border-radius); /* Add rounded corners */
+        box-shadow: var(
+          --box-shadow
+        ); /* Add a subtle shadow for a polished look */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/assets/img/favicon.png"
+            width="64"
+            height="64"
+            class="avatar"
+          />
+          <span class="brand-text">Thành cổ Sơn Tây</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="intro.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">Lịch sử</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="architecture.html">Kiến trúc</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cultural.html"
+                >Giá trị văn hóa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="authors.html">Tác giả</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-title" data-aos="fade-up">Ý nghĩa văn hóa</h1>
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Ý nghĩa văn hóa
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Cultural Significance Section -->
+    <section class="cultural-significance py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="cultural-content">
+              <h2 class="section-title">Giá trị văn hóa lịch sử</h2>
+              <div class="divider"></div>
+              <p style="text-align: justify">
+                Thành cổ Sơn Tây không chỉ là một công trình kiến trúc đồ sộ mà
+                còn là một cuốn sách lịch sử sống động. Thành cổ Sơn Tây này đã
+                chứng kiến biết bao thăng trầm của dân tộc, từ thời kỳ phong
+                kiến đến những cuộc kháng chiến chống ngoại xâm hào hùng.
+              </p>
+              <p style="text-align: justify">
+                Ngày nay, khi đất nước đã hòa bình, Thành cổ Sơn Tây vẫn giữ
+                nguyên vẻ đẹp cổ kính và trở thành một điểm đến du lịch hấp dẫn.
+                Hàng năm, có rất nhiều du khách đến đây để tìm hiểu về lịch sử,
+                khám phá kiến trúc độc đáo và tận hưởng không gian yên bình.
+              </p>
+              <div class="divider"></div>
+              <p style="text-align: justify">
+                Thành cổ Sơn Tây là một di tích lịch sử quan trọng, cần được bảo
+                tồn để gìn giữ giá trị văn hóa và kiến trúc cổ đặc sắc. Việc bảo
+                tồn không chỉ giúp thế hệ mai sau hiểu về quá khứ mà còn góp
+                phần phát triển du lịch bền vững. Cần có sự chung tay của cộng
+                đồng và chính quyền để bảo vệ và trùng tu di tích này đúng cách.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="cultural-gallery">
+              <div class="swiper cultural-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/assets/img/cultural2.jpg"
+                      alt="Cultural2"
+                      class="img-fluid rounded shadow"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/assets/img/cultural1.png"
+                      alt="Cultural1"
+                      class="img-fluid rounded shadow"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Navigation -->
+    <div class="page-navigation py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <a href="architecture.html" class="btn btn-outline-primary">
+              <i class="fas fa-arrow-left me-2"></i> Kiến trúc
+            </a>
+          </div>
+          <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+            <a href="authors.html" class="btn btn-primary">
+              Tác giả <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>Thành cổ Sơn Tây</h3>
+              <p>
+                <i class="fas fa-map-marker-alt me-2"></i> Thị xã Sơn Tây, Hà
+                Nội, Việt Nam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>Bản đồ</h3>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396.055753884989!2d105.5029230590448!3d21.138802498860322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134f606cd7aefa7%3A0x5e8ae1ecfb03d0b1!2zVGjDoG5oIGPhu5UgU8ahbiBUw6J5!5e1!3m2!1svi!2s!4v1743930170189!5m2!1svi!2s"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen="true"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>Kết nối</h3>
+              <div class="social-links">
+                <a
+                  href="https://www.facebook.com/Semishigure.21"
+                  class="social-link"
+                  aria-label="Facebook Mạnh"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link" aria-label="Facebook Hiền"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </div>
+              <div class="newsletter mt-4">
+                <h4>Đăng ký nhận tin</h4>
+                <form class="newsletter-form">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email của bạn"
+                      required
+                    />
+                    <button class="btn btn-primary" type="submit">
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom mt-5 py-3 text-center">
+          <p class="mb-0">
+            &copy; 2025 Thành cổ Sơn Tây. Tất cả các quyền được bảo lưu.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

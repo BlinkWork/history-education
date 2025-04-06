@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tác giả - Thành cổ Sơn Tây</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/author.css" />
+    <link type="image/x-icon" href="/assets/img/favicon.png" />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" />
+  </head>
+  <body class="authors-page">
+    <div class="preloader">
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <div id="particles-js" class="particles-container"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/assets/img/favicon.png"
+            width="64"
+            height="64"
+            class="avatar"
+          />
+          <span class="brand-text">Thành cổ Sơn Tây</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="intro.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">Lịch sử</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="architecture.html">Kiến trúc</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cultural.html">Giá trị văn hóa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="authors.html">Tác giả</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header authors-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1
+              class="page-title animated-title"
+              style="color: green"
+              data-aos="zoom-in"
+            >
+              Tác giả dự án
+            </h1>
+            <div
+              class="divider mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            ></div>
+            <p class="lead text-white" data-aos="fade-up" data-aos-delay="300">
+              Những người đã tạo nên website Thành cổ Sơn Tây
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="header-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+    </header>
+
+    <section class="authors-section py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Author Card -->
+          <div class="col-lg-6 d-flex">
+            <div
+              class="author-card-full bg-dark text-white rounded-4 shadow p-4 w-100 d-flex flex-column"
+            >
+              <div class="row g-4 flex-grow-1">
+                <div class="col-md-5">
+                  <div class="author-image text-center">
+                    <img
+                      src="/assets/img/authors/manh.jfif"
+                      alt="Đinh Thế Mạnh"
+                      class="img-fluid rounded-3"
+                    />
+                    <div
+                      class="author-social mt-3 d-flex gap-3 justify-content-center"
+                    >
+                      <a
+                        href="https://www.facebook.com/Semishigure.21"
+                        class="text-white fs-5"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a
+                        href="https://www.instagram.com/bcdegiklopqrstuvxyz"
+                        class="text-white fs-5"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-7 d-flex flex-column">
+                  <h2 class="author-name mb-1">Đinh Thế Mạnh</h2>
+                  <p class="author-title text-info mb-3">Thiết kế & Tìm hiểu</p>
+
+                  <div class="flex-grow-1">
+                    <h5 class="mb-1">Đôi lời</h5>
+                    <p class="small" style="text-align: justify">
+                      Dự án Thành cổ Sơn Tây là một hành trình đầy cảm hứng, nơi
+                      quá khứ và hiện tại hòa quyện trong từng đường nét thiết
+                      kế. Chúng tôi tự hào góp phần bảo tồn di sản văn hóa, đồng
+                      thời mang đến trải nghiệm số hiện đại và gần gũi hơn với
+                      cộng đồng. Đây không chỉ là một dự án, mà là một sứ mệnh
+                      lưu giữ ký ức và kết nối thế hệ.
+                    </p>
+
+                    <h5 class="mt-3 mb-1">Vai trò trong dự án</h5>
+                    <p class="small" style="text-align: justify">
+                      Đảm nhận việc lên kế hoạch, phát triển ý tưởng, xây dựng
+                      nội dung và thực hiện thiết kế.
+                    </p>
+
+                    <h5 class="mt-3 mb-2">Tính cách</h5>
+                    <div class="skill-item mb-2">
+                      <div class="d-flex justify-content-between">
+                        <span>Hài hước</span
+                        ><span class="text-white-50">96%</span>
+                      </div>
+                      <div class="progress" style="height: 6px">
+                        <div
+                          class="progress-bar bg-success"
+                          style="width: 96%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-item mb-2">
+                      <div class="d-flex justify-content-between">
+                        <span>Nghiêm túc</span
+                        ><span class="text-white-50">69%</span>
+                      </div>
+                      <div class="progress" style="height: 6px">
+                        <div
+                          class="progress-bar bg-warning"
+                          style="width: 69%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-item mb-2">
+                      <div class="d-flex justify-content-between">
+                        <span>Sáng tạo</span
+                        ><span class="text-white-50">66%</span>
+                      </div>
+                      <div class="progress" style="height: 6px">
+                        <div
+                          class="progress-bar bg-info"
+                          style="width: 66%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="d-flex justify-content-between">
+                        <span>Ứng biến</span
+                        ><span class="text-white-50">100%</span>
+                      </div>
+                      <div class="progress" style="height: 6px">
+                        <div
+                          class="progress-bar bg-danger"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Author 2 Card -->
+          <div class="col-lg-6 d-flex">
+            <div
+              class="author-card-full bg-dark text-white rounded-4 shadow p-4 w-100 d-flex flex-column"
+            >
+              <div class="row g-4 flex-grow-1">
+                <div class="col-md-5">
+                  <div class="author-image text-center">
+                    <img
+                      src="/assets/img/authors/hien.jpg"
+                      alt="Hiền"
+                      class="img-fluid rounded-3"
+                    />
+                    <div
+                      class="author-social mt-3 d-flex gap-3 justify-content-center"
+                    >
+                      <a
+                        href="https://www.facebook.com/thuhien.nt.7731"
+                        class="text-white fs-5"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a
+                        href="https://www.instagram.com/nthien_1524/"
+                        class="text-white fs-5"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-7 d-flex flex-column">
+                  <h2 class="author-name mb-1">Nguyễn Thị Thu Hiền</h2>
+                  <p class="author-title text-info mb-3">Nội dung & Tìm hiểu</p>
+
+                  <div class="flex-grow-1">
+                    <h5 class="mb-1">Đôi lời</h5>
+                    <p class="small" style="text-align: justify">
+                      Một ngày làm việc với những hình ảnh và câu chuyện về
+                      Thành cổ Sơn Tây khiến tôi cảm nhận sâu sắc vẻ đẹp và giá
+                      trị lịch sử của di tích này. Mỗi khoảnh khắc tìm hiểu, tôi
+                      càng khao khát được một lần đến thăm và hòa mình vào không
+                      gian đầy cảm hứng này.
+                    </p>
+
+                    <h5 class="mt-3 mb-1">Vai trò trong dự án</h5>
+                    <p class="small" style="text-align: justify">
+                      Đảm nhận việc lên kế hoạch, phát triển ý tưởng, xây dựng
+                      nội dung và thực hiện thiết kế.
+                    </p>
+
+                    <h5 class="mt-3 mb-2">Tính cách</h5>
+                    <div class="skill-item mb-2">
+                      <div class="d-flex justify-content-between">
+                        <span>Hài hước</span
+                        ><span class="text-white-50">50%</span>
+                      </div>
+                      <div class="progress" style="height: 6px">
+                        <div
+                          class="progress-bar bg-success"
+                          style="width: 50%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-item mb-2">
+                      <div class="d-flex justify-content-between">
+                        <span>Nghiêm túc</span
+                        ><span class="text-white-50">88%</span>
+                      </div>
+                      <div class="progress" style="height: 6px">
+                        <div
+                          class="progress-bar bg-warning"
+                          style="width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-item mb-2">
+                      <div class="d-flex justify-content-between">
+                        <span>Sáng tạo</span
+                        ><span class="text-white-50">80%</span>
+                      </div>
+                      <div class="progress" style="height: 6px">
+                        <div
+                          class="progress-bar bg-info"
+                          style="width: 80%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="d-flex justify-content-between">
+                        <span>Ứng biến</span
+                        ><span class="text-white-50">75%</span>
+                      </div>
+                      <div class="progress" style="height: 6px">
+                        <div
+                          class="progress-bar bg-danger"
+                          style="width: 75%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials py-5 bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-title" data-aos="fade-up">Đánh giá về dự án</h2>
+            <div
+              class="divider mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            ></div>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">
+              Những nhận xét từ đồng nghiệp và khách hàng
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-track">
+            <div class="testimonial-slide first-four">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>"Trò yêu của cô xứng đáng 10 điểm."</p>
+                </div>
+                <div class="testimonial-author">
+                  <img
+                    src="/assets/img/authors/conguyetlinh.jpg"
+                    alt="Hằng Nguyễn"
+                    class="testimonial-avatar"
+                  />
+                  <div class="testimonial-info">
+                    <h4>Cô Nguyệt Linh</h4>
+                    <p>Boss</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide first-four">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>"Thầy tự hào về các em."</p>
+                </div>
+                <div class="testimonial-author">
+                  <img
+                    src="/assets/img/authors/dung.jpg"
+                    alt="Hằng Nguyễn"
+                    class="testimonial-avatar"
+                  />
+                  <div class="testimonial-info">
+                    <h4>Thầy Dũng</h4>
+                    <p>Phó boss</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide first-four">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>"Tôi rất ngưỡng mộ chị Thu Hiền, idol của lòng tôi."</p>
+                </div>
+                <div class="testimonial-author">
+                  <img
+                    src="/assets/img/authors/aiday.jpg"
+                    alt="Thảo An"
+                    class="testimonial-avatar"
+                  />
+                  <div class="testimonial-info">
+                    <h4>Thảo An</h4>
+                    <p>Không đẹp gái đời không nể</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide first-four">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>"Khi mô rảnh thì đi."</p>
+                </div>
+                <div class="testimonial-author">
+                  <img
+                    src="/assets/img/authors/hangnguyen.jpg"
+                    alt="Hằng Nguyễn"
+                    class="testimonial-avatar"
+                  />
+                  <div class="testimonial-info">
+                    <h4>Hằng Nguyễn</h4>
+                    <p>Vk iu của eng</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "Đây là lần đầu tiên tôi đi một khu di tích lịch sử tận 2
+                    tiếng đồng hồ."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <img
+                    src="/assets/img/authors/laosIT.jpg"
+                    alt="Hiếu"
+                    class="testimonial-avatar"
+                  />
+                  <div class="testimonial-info">
+                    <h4>Hiếu</h4>
+                    <p>IT người Lào</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "Tôi rất ấn tượng với cách mà đội ngũ phát triển đã tạo ra
+                    một website không chỉ đẹp mắt mà còn chứa đựng nhiều thông
+                    tin giá trị về Thành cổ Sơn Tây. Đây là một tài liệu tham
+                    khảo tuyệt vời cho những ai quan tâm đến lịch sử và văn hóa
+                    Việt Nam."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <img
+                    src="/assets/img/authors/saochinaylaioday.jpg"
+                    alt="Thiên Lý"
+                    class="testimonial-avatar"
+                  />
+                  <div class="testimonial-info">
+                    <h4>Thiên Lý</h4>
+                    <p>Không liên quan đến jack</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "Tôi rất mong sẽ có dịp đặt chân đến đây để tận mắt nhìn
+                    thấy và cảm nhận không khí linh thiêng của nơi này. Tuy chỉ
+                    được tiêu 5k một ngày, tôi vẫn sẽ cố đến được nơi này."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <img
+                    src="/assets/img/authors/chacchanlanhuvayroi.jpg"
+                    alt="Tuyên"
+                    class="testimonial-avatar"
+                  />
+                  <div class="testimonial-info">
+                    <h4>Tuyên</h4>
+                    <p>Bác sĩ - Thạc sỹ - Phó giáo sư - Tiến sỹ tương lai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    "Với số xăng hiện tại, tôi thừa sức đi thêm vài vòng thành
+                    cổ để ngắm nhìn vẻ đẹp hào hùng và vĩ đại của nó."
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <img
+                    src="/assets/img/authors/bienmattieuluon.jpg"
+                    alt="Tâm"
+                    class="testimonial-avatar"
+                  />
+                  <div class="testimonial-info">
+                    <h4>Tâm</h4>
+                    <p>Chàng trai hai mái</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Specific  -->
+          </div>
+
+          <div class="testimonial-controls">
+            <button class="testimonial-prev">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="testimonial-next">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="section-title">Liên hệ với chúng tôi</h2>
+            <div class="divider"></div>
+            <p class="lead">
+              Bạn có câu hỏi hoặc đề xuất về dự án? Hãy liên hệ với chúng tôi!
+            </p>
+            <p>
+              Chúng tôi luôn sẵn sàng lắng nghe ý kiến đóng góp và trả lời mọi
+              thắc mắc của bạn về dự án website Thành cổ Sơn Tây. Đừng ngần ngại
+              liên hệ với chúng tôi qua form bên cạnh hoặc các kênh liên lạc
+              dưới đây.
+            </p>
+
+            <div class="contact-info mt-4">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>dthemanh2402@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Địa chỉ</h4>
+                  <p>Thị xã Sơn Tây, Hà Nội, Việt Nam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="contact-form">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Họ và tên</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Nhập họ và tên của bạn"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Nhập địa chỉ email của bạn"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Tiêu đề</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    placeholder="Nhập tiêu đề"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Nội dung</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Nhập nội dung tin nhắn"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Gửi tin nhắn <i class="fas fa-paper-plane ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>Thành cổ Sơn Tây</h3>
+              <p>
+                <i class="fas fa-map-marker-alt me-2"></i> Thị xã Sơn Tây, Hà
+                Nội, Việt Nam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>Bản đồ</h3>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396.055753884989!2d105.5029230590448!3d21.138802498860322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134f606cd7aefa7%3A0x5e8ae1ecfb03d0b1!2zVGjDoG5oIGPhu5UgU8ahbiBUw6J5!5e1!3m2!1svi!2s!4v1743930170189!5m2!1svi!2s"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen="true"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>Kết nối</h3>
+              <div class="social-links">
+                <a
+                  href="https://www.facebook.com/Semishigure.21"
+                  class="social-link"
+                  aria-label="Facebook Mạnh"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link" aria-label="Facebook Hiền"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </div>
+              <div class="newsletter mt-4">
+                <h4>Đăng ký nhận tin</h4>
+                <form class="newsletter-form">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email của bạn"
+                      required
+                    />
+                    <button class="btn btn-primary" type="submit">
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom mt-5 py-3 text-center">
+          <p class="mb-0">
+            &copy; 2025 Thành cổ Sơn Tây. Tất cả các quyền được bảo lưu.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/author.js"></script>
+  </body>
+</html>
