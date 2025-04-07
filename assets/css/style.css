@@ -244,7 +244,7 @@ img {
   height: 100vh;
   min-height: 600px;
   position: relative;
-  background: url("././img/landing_image.jpg") no-repeat center center / cover;
+  background: url("../img/landing_image.jpg") no-repeat center center / cover;
   background-attachment: fixed;
   color: var(--color-white);
   overflow: hidden;
